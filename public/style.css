@@ -196,6 +196,11 @@ footer > a {
 
 
 /* Style for the registration form*/
+.apiHint {
+  background: gray;
+  padding:5px;
+  margin:5px;
+}
 .titleWrapper,.regFormTitle,.exercisesFormTitle {
   padding:5px;
   margin: 2.5%;

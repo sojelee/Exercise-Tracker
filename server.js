@@ -124,13 +124,13 @@ app.get('/api/exercise/log',(req,res)=>{
 });
 
 // Route to register and post exercise
-app.post('/api/exercise/newexercise',(req,res)=>{
+app.post('/api/exercise/add',(req,res)=>{
 
   mongodb.MongoClient.connect(urldb, (err, database)=>{
   if(err) throw err;
     var mydb = database.db('exercise_tracker');
     var cln = mydb.collection('exercises');
-    const { userid,description,duration,date } = req.body;
+    let { userid,description,duration,date } = req.body;
     if (!date){
        let currentDate = new Date();
        date = currentDate.getFullYear()+'-'+currentDate.getMonth()+1+'-'+currentDate.getDate();

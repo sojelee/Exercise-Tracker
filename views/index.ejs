@@ -42,7 +42,8 @@
     <div class="regform">
       <h1>FreeCodeCamp Microservices API: Exercises Tracker</h1>
       <h1>User registration form</h1>
-      <form action="/exercise/new_user" method="post" id="registration-form">
+      <div class="apiHint">POST /api/exercise/new-user</div>
+      <form action="/api/exercise/new_user" method="post" id="registration-form">
               <input name="username" type="text" maxlength="100" placeholder="username" aria-labelledby="submit-user">
               <button type="submit" id="submit-user">Submit</button>
       </form>
@@ -52,7 +53,9 @@
     <!-- Exercises Registration form -->
     <div class="exercisesform">
     <h1>Exercises Registration form</h1>
-    <form action="/exercise/newexercise" method="post" id="exercises-form">
+    <div class="apiHint">POST /api/exercise/add</div>
+
+    <form action="/api/exercise/add" method="post" id="exercises-form">
       <input name="userid" type="text" maxlength="100" placeholder="userid" aria-labelledby="submit-exercise">
       <input name="description" type="text" maxlength="100" placeholder="description" aria-labelledby="submit-exercise">
       <input name="duration" type="text" maxlength="100" placeholder="duration ms" aria-labelledby="submit-exercise">

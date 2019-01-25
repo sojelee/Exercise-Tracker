@@ -133,7 +133,7 @@ app.post('/api/exercise/newexercise',(req,res)=>{
     const { userid,description,duration,date } = req.body;
     if (!date){
        let currentDate = new Date();
-       data = currentDate.getFullYear()+'-'+currentDate.getMonth()+1+'-'+currentDate.getDate();
+       date = currentDate.getFullYear()+'-'+currentDate.getMonth()+1+'-'+currentDate.getDate();
       }
     cln.insert({userid,description,duration,date},(err,docs)=>{
         if(err)

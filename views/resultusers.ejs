@@ -1,0 +1,7 @@
+<% if(docs.length > 0){ %>
+    <% docs.forEach( doc => { %>
+        { "_id":<%= doc._id %>, "username":<%= doc.username %> }
+    <% }); %>
+<% } else{ %>
+    <p>no users available</p>
+<% } %>

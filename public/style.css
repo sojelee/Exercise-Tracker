@@ -1,0 +1,272 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: auto;
+}
+
+
+a:link {
+    text-decoration: none;
+    color:#8ABF7C;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.icons {
+   color:#8ABF7C;
+}
+
+h1 {
+  font-weight: bold;
+  color: #000;
+}
+
+.bold {
+  font-weight: bold;
+}
+h1,h2 {
+   font-weight: normal;
+}
+p {
+  max-width: 600px;
+}
+
+.leftBorder{
+  border-left: 4px solid #ccc;
+  padding:10px;
+}
+code, ul li {
+  color:red;
+}
+
+.leftBorder li {
+  margin-bottom: 10px;
+}
+code li {
+  margin-bottom: 10px;
+  padding-left:5px;
+}
+
+ul {
+  list-style:none;
+  padding-left:0;
+}
+
+header{
+   background: #006400;
+}
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}
+
+
+ .medium {
+       height: 140px;
+       background: #006400;
+   }
+
+   .medium ul {
+      display: flex;
+      height: 40px;
+      list-style: none;
+      align-items: center;
+   }
+
+   .medium li {
+        color: #ffffff;
+   }
+
+   .medium ul:nth-child(1) li:first-child {
+      margin-right: auto;
+      margin-left: 100px;
+   }
+
+
+   .medium ul:nth-child(1) li:nth-child(2) {
+       margin-left: auto;
+   }
+
+   .medium ul:nth-child(1) li:not(.M){
+      margin-right: 10px;
+      color:#8ABF7C;
+   }
+
+   .medium ul:nth-child(2) li:first-child {
+      margin-left: 100px;
+   }
+
+    .medium ul:nth-child(2) li {
+       margin-right: 15px;
+
+   }
+   .medium ul:nth-child(2) li:last-child {
+       margin-right: 100px;
+
+   }
+
+   .medium ul:nth-child(1) li:last-child {
+       margin-right: 100px;
+
+   }
+
+   .medium ul:nth-child(2) li:nth-child(6) {
+       margin-left: auto;
+
+   }
+
+
+   .medium ul:nth-child(2) li:nth-child(1) i {
+       margin-left: 5px;
+
+   }
+
+   .medium ul:nth-child(2) li:not(.fccmed){
+      color:#8ABF7C;
+   }
+
+   .medium ul:nth-child(1) li:hover{
+      color:#ffffff;
+   }
+
+   .medium ul:nth-child(2) li:hover{
+      color:#ffffff;
+   }
+
+   .medium ul:nth-child(1) li:last-child{
+    display:block;
+    width:120px;
+    height: 30px;
+    padding-top: 5px;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: center;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #8ABF7C;
+   }
+
+   .medium ul:nth-child(2) li:last-child{
+    display:block;
+    width:80px;
+    height: 20px;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #8ABF7C;
+   }
+
+   .medium ul:nth-child(1) li:first-child{
+    display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 24px;
+    color: #006400;
+    font-weight: bolder;
+    text-align: center;
+    background: #F3FFEA;
+   }
+
+
+
+/* Style for the registration form*/
+.titleWrapper,.regFormTitle,.exercisesFormTitle {
+  padding:5px;
+  margin: 2.5%;
+}
+.regform , .exercisesform {
+  background: linear-gradient(135deg, hsl(180, 70%, 50%), hsl(200, 75%, 25%));
+  padding:5px;
+  margin: 5%;
+}
+
+.userStoriesWrapper,.imageWrapper {
+
+  margin: 5%;
+}
+
+html {
+font-size: 100%;
+line-height: 1.4;
+}
+
+input, button {
+font: inherit;
+border: 0;
+&:focus {
+outline: none;
+}
+}
+
+#registration-form {
+  display: flex;
+  grid-column: 2;
+}
+
+#registration-form input{
+  flex-grow: 1;
+  padding: 0.5em 0.75em;
+}
+
+#registration-form button {
+  padding: 0.5em 0.75em;
+  background: hsl(130, 75%, 75%);
+}
+
+#registration-form button:hover {
+  padding-right: 25px;
+  background: #228999;
+  color:white;
+}
+
+
+#exercises-form {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+}
+
+
+#exercises-form input {
+  flex-grow: 1;
+  padding: 0.5em 0.75em;
+  margin:5px;
+}
+
+#exercises-form  button {
+  padding: 0.5em 0.75em;
+  background: hsl(130, 75%, 75%);
+  margin:5px;
+}
+
+#exercises-form button:hover {
+  padding: 5px;
+  background: #228999;
+  color:white;
+}

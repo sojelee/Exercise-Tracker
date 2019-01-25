@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercises Tracker| FCC Microservices API| Joseph Myalla</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+  <header>
+
+    <div class="medium">
+    <ul>
+       <li class="M">M</li>
+       <li>Sign in</li>
+       <li>Get Started</li>
+    </ul>
+    <ul>
+       <li class="fccmed">FreeCodeCamp<i class="fa fa-free-code-camp" style="font-size:12px"></i></li>
+       <li>DEV</li>
+       <li>DESIGN</li>
+       <li>DATA</li>
+       <li>LEARN TO CODE FOR FREE</li>
+       <li><i class="fa fa-search"></i></li>
+       <li><a href="https://twitter.com/chanangae"><i class="fa fa-twitter icons"></i></a></li>
+       <li><a href="https://web.facebook.com/joseph.myalla"><i class="fa fa-facebook-official icons"></i></a></li>
+       <li><a href="https://github.com/sojelee"><i class="fa fa-github icons"></i></a></li>
+       <li>Follow</li>
+    </ul>
+  </div>
+
+    </header>
+
+  <div class="contentWrapper">
+  <section>
+
+        <!-- User registration form -->
+    <div class="regform">
+      <h1>FreeCodeCamp Microservices API: Exercises Tracker</h1>
+      <h1>User registration form</h1>
+      <form action="/exercise/new_user" method="post" id="registration-form">
+              <input name="username" type="text" maxlength="100" placeholder="username" aria-labelledby="submit-user">
+              <button type="submit" id="submit-user">Submit</button>
+      </form>
+    </div>
+    </section>
+    <section>
+    <!-- Exercises Registration form -->
+    <div class="exercisesform">
+    <h1>Exercises Registration form</h1>
+    <form action="/exercise/newexercise" method="post" id="exercises-form">
+      <input name="userid" type="text" maxlength="100" placeholder="userid" aria-labelledby="submit-exercise">
+      <input name="description" type="text" maxlength="100" placeholder="description" aria-labelledby="submit-exercise">
+      <input name="duration" type="text" maxlength="100" placeholder="duration ms" aria-labelledby="submit-exercise">
+      <input name="date" type="text" maxlength="100" placeholder="yyyy-mm-dd" aria-labelledby="submit-exercise">
+      <button type="submit" id="submit-exercise">Submit</button>
+     </form>
+   </div>
+    </section>
+    <section>
+    <div class="userStoriesWrapper">
+      <h1>User Stories</h1>
+    <ol>
+          <li> I can create a user by posting form data username to /api/exercise/new-user and returned will be an object with username and _id </li>
+          <li> I can get an array of all users by getting api/exercise/users with the same info as when creating a user. </li>
+          <li>  I can add an exercise to any user by posting form data userId (_id), description, duration, and optionally date to /api/exercise/add
+                If no date supplied it will     use  current date. Returned will the the user object with also with the exercise fields added. </li>
+          <li>  I can retrieve a full exercise log of any user by getting /api/exercise/log with a parameter of userId(_id). Return will be the user object
+                with added array log and count (total exercise count). </li>
+          <li>  I can retrieve part of the log of any user by also passing along optional parameters of from & to or limit. (Date format yyyy-mm-dd, limit = int) </li>
+      </ol>
+    </div>
+      </section>
+    </main>
+    </div>
+    <footer>
+
+    </footer>
+
+  </body>
+</html>
